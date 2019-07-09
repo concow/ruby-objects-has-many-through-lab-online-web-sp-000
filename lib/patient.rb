@@ -13,7 +13,6 @@ class Patient
 
   def new_appointments(doctor, date)      #creates a new appointment belonging to that patient
     Appointment.new(self, doctor, date)
-
   end
 
   def doctors
