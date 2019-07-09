@@ -18,7 +18,7 @@ class Doctor
 
   def appointments                      #Class Doctor HAS MANY appointments
     Appointment.all.select {|appointment| appointment.doctor == self}
-    #instance method iterates through all Appointments selects those belonging to doctor instance     
+    #instance method iterates through all Appointments selects those belonging to doctor instance
   end
 
   def patients
