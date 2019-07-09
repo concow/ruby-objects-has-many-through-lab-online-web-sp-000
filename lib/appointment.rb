@@ -3,7 +3,7 @@ class Appointment
                                                   #these connect relationships to deliver information on these related objects
   @@all = []
 
-  def initialize(date, doctor, date)           #had to be in this order for it to work (patient, doctor, date)
+  def initialize(date, doctor, patient)           #had to be in this order for it to work (patient, doctor, date)
     @date = date                            #but spec/05_appointment_spec.rb had tests listed (date, patient, doctor)
     @doctor = doctor
     @patient = patient
