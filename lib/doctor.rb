@@ -12,8 +12,8 @@ class Doctor
     return @@all
   end
 
-  def new_appointment(patient, date)    #given a patient and a date, creates a new appointment
-    Appointment.new(patient, self, date)    #Appointment knows it belongs to the Doctor (self)
+  def new_appointment(date, patient)    #given a patient and a date, creates a new appointment
+    Appointment.new(date, self, patient)    #Appointment knows it belongs to the Doctor (self)
   end
 
   def appointments                      #Class Doctor HAS MANY appointments
