@@ -3,7 +3,7 @@ class Appointment
                                                   #these connect relationships to deliver information on these related objects
   @@all = []
 
-  def initialize(patient, doctor, date)           #had to be in this order for it to work (patient, doctor, date)
+  def initialize(doctor, patient, date)           #had to be in this order for it to work (patient, doctor, date)
     @date = date
     @doctor = doctor
     @patient = patient
