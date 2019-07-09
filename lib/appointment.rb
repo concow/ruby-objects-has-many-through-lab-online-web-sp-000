@@ -4,7 +4,7 @@ class Appointment
   @@all = []
 
   def initialize(date, doctor, patient)           #had to be in this order for it to work (patient, doctor, date)
-    @date = date                            #but spec/05_appointment_spec.rb had tests listed (date, patient, doctor)
+    @date = date                                #but spec/05_appointment_spec.rb had tests listed (date, patient, doctor)
     @doctor = doctor
     @patient = patient
     @@all << self
