@@ -1,5 +1,5 @@
 class Appointment
-  attr_accessor :patient, :doctor, :date         #instance variables to create explicitly create appointments for doctor/patient
+  attr_accessor :date, :doctor, :patient         #instance variables to create explicitly create appointments for doctor/patient
                                                   #these connect relationships to deliver information on these related objects
   @@all = []
 
