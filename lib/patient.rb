@@ -6,4 +6,8 @@ class Patient
 
   end
 
+  def self.all 
+    return @@all 
+  end
+
 end
