@@ -10,4 +10,11 @@ class Patient
     return @@all
   end
 
+  def appointments
+
+  end
+
+  def doctors
+
+  end
 end
