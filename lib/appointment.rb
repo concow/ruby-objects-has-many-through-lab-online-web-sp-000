@@ -3,8 +3,10 @@ class Appointment
                                                   #these connect relationships to deliver information on these related objects
   @@all = []
 
-  def initialize(date)
+  def initialize(date, doctor, patient)
     @date = date
+    @doctor = doctor
+    @patient = patient
     @@all << self
   end
 
