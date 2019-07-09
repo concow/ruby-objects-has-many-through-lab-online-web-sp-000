@@ -11,7 +11,7 @@ class Patient
     return @@all
   end
 
-  def new_appointments(doctor, date)
+  def new_appointments(doctor, date)      #creates a new appointment belonging to that patient
     Appointment.new(self, doctor, date)
 
   end
